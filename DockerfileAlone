@@ -1,0 +1,6 @@
+FROM ubuntu:latest
+ENV DEBIAN_FRONTEND=noninteractive
+RUN mkdir -p /adapt-lab
+RUN apt-get update && apt-get install -y texlive-full
+RUN apt-get update && apt-get install -y make texlive-latex-extra
+WORKDIR /data
