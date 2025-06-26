@@ -1,2 +1,2 @@
 #!/bin/sh
-exec docker run --rm --user="$(id -u)" --mount type=bind,src="$PWD",dst="$PWD" --env TEXINPUTS=/adapt-lab//:/usr/share/texmf//:"$TEXINPUTS":"$PWD" --env BIBINPUTS=.//:/adapt-lab// -w "$PWD" -it f14:tex "$@"
+exec docker run --rm --user="$(id -u)" --mount type=bind,src="$PWD",dst="$PWD" --env TEXINPUTS=/adapt-lab//:/usr/share/texmf//:"$TEXINPUTS":"$PWD" --env BIBINPUTS=.//:/adapt-lab// -w "$PWD" -it lcf:tex "$@"

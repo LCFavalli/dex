@@ -1,6 +1,6 @@
 
 adapt-build:	
-	docker build ~/Devel/adapt-lab/ -t f14:tex -f ./Dockerfile4Adapt
+	docker build /home/lucafavalli/AdaptLab/adapt-lab/ -t lcf:tex -f ./Dockerfile4Adapt
 
 alone-build:	
-	docker build ~/Devel/adapt-lab/ -t f14:tex -f ./DockerfileAlone
+	docker build /home/lucafavalli/AdaptLab/adapt-lab/ -t lcf:tex -f ./DockerfileAlone
